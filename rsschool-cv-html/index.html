@@ -1,73 +1,362 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-style: normal;
+        }
+
+        div {
+            border: none;
+            font-family: sans-serif;
+
+        }
+
+        .block {
+            display: flex;
+            height: 100vh;
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 6px 10px;
+            display: inline-block;
+            height: 35px;
+
+        }
+
+        a:hover {
+            color: gray;
+        }
+
+        .aside {
+            background-color: #046961;
+            min-width: 16.6666%;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: rgb(230, 218, 218);
+            word-wrap: break-word;
+        }
+
+        progress {
+            border: none;
+            width: 75%;
+            height: 5px;
+            background: rgb(241, 230, 233);
+        }
+
+        progress {
+            color: rgb(230, 218, 218);
+            ;
+        }
+
+        progress::-webkit-progress-value {
+            background: rgb(230, 218, 218);
+            ;
+        }
+
+        progress::-webkit-progress-value {
+            background: rgb(230, 218, 218);
+            ;
+        }
+
+        progress::-webkit-progress-bar {
+            background: #048378;
+        }
+
+        .content {
+
+            padding: 10px;
+
+        }
+
+        .clear-li {
+            list-style-type: none;
+
+
+        }
+
+        article {
+            font-style: italic;
+        }
+
+        .semi {
+            opacity: 0.5;
+        }
+
+        .line {
+            line-height: 1.5em;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #d8aa64;
+            min-height: 35px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .link {
+            background-color: #d8aa64;
+            display: flex;
+        }
+
+
+
+        .footer span {
+            display: block;
+            margin: 5px;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        div.link {
+            line-height: 2em;
+        }
+
+        img {
+            text-align: center;
+            width: 35%;
+            display: block;
+            margin: auto;
+        }
+
+        .square-li {
+            list-style-type: square;
+        }
+
+        @media all and (max-width: 768px) {
+
+            .block {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .content {
+                order: 1;
+            }
+
+            .aside {
+                flex-grow: 1;
+                order: 2;
+            }
+
+            .footer {
+                flex-direction: column;
+            }
+
+            .link {
+                justify-content: space-around;
+            }
+
+            .footer span {
+                margin: 8px auto;
+            }
+
+        }
+
+        @media all and (max-width: 480px) {
+
+            a {
+                padding: 10px;
+                margin: 0;
+                box-shadow: 0 0 1px gray;
+            }
+
+            .aside {
+                width: 100%;
+            }
+
+            .link {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer span {
+                padding: 7px;
+            }
+
+            .link a {
+                padding: 5px 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Yauhen Drazdou</h1>
+    <div>
 
-        <h3>Junior Front End Developer</h3>
+        <div class="block">
+            <div class="aside">
+                <aside>
+                    <img src='https://github.com/EvgenDrozdov/files/raw/main/cv-photo.jpg' alt='cv-photo'>
+                    <h1>Yauhen Drazdou</h1>
 
-        <p>Minsk
-            +375296662221
-            evgeny_drozdov@yahoo.com</p>
-    </header>
+                    <p class="text-center">Junior Front End Developer</p>
 
-    <article>
-        *Recent Software Engineering in Front-end graduates with fundamental knowledge of HTML, CSS and JavaScript .
-        Seeking
-        to utilize educational background with excellent analytical, technical and programming skills to develop as an
-        entry-level software engineer.*
+                    <ul class="clear-li">
+                        <li>Minsk, Belarus</li>
+                        <li>+375296662221</li>
+                        <li>evgeny_drozdov@yahoo.com</li>
+                    </ul>
 
-
-        PERSONAL INFORMATION
-
-        - Address: Minsk
-        - Nationality: Belarus
-        - Hobbies: Sport Activities, Reading Books, Watching Netflix
-
-        #### LANGUAGES
-        English A2
-        Polish A2
-
-        #### SKILLS
-        - Ability to Work in a Team - *Expert*
-        - jQuery - *Beginner*
-        - JavaScript - *Skillful*
-        - Git - *Experienced*
-        - HTML5 - *Experienced*
-        - HTML - *Experienced*
-        - CSS - *Experienced*
-        - Communication Skills - *Expert*
-        - Ability to Learn Quickly - *Experienced*
-        - Adaptability - *Expert*
+                    <h3>Skills</h3>
 
 
-        #### WORK EXPERIENCE
-        * October 2012 – December 2020
-        Deputy Director at Private trade company "FlorexGroup", Minsk
-        Main responsibilities:
-        > Management of the financial and economic activities of the company.
-        > Taking measures to provide the Company with qualified personnel .
-        > Representing the interests of the company (concluding transactions) .
-        > Carry out internal audit.
-        > Online store management (E-commerce, SMM).*
+                    <p>Ability to Work in a Team
+                        <progress max="100" value="100">
+
+                        </progress>
+                    </p>
+
+                    <p>
+                        jQuery<br>
+                        <progress max="100" value="10">
+
+                        </progress>
+                    </p>
+
+                    <p>JavaScript<br>
+                        <progress max="100" value="25">
+
+                        </progress>
+                    </p>
+
+                    <p>Git<br>
+                        <progress max="100" value="75">
+
+                        </progress>
+                    </p>
+
+                    <p>HTML5<br>
+                        <progress max="100" value="75">
+
+                        </progress>
+                    </p>
+
+                    <p>HTML<br>
+                        <progress max="100" value="75">
+
+                        </progress>
+                    </p>
+
+                    <p>CSS<br>
+                        <progress max="100" value="75">
+
+                        </progress>
+                    </p>
+
+                    <p>Communication Skills<br>
+                        <progress max="100" value="100">
+
+                        </progress>
+                    </p>
+
+                    <p>Ability to Learn Quickly<br>
+                        <progress max="100" value="75">
+
+                        </progress>
+                    </p>
+
+                    <p>Adaptability<br>
+                        <progress max="100" value="100">
+
+                        </progress>
+                    </p>
+
+                </aside>
+            </div>
+            <div class="content">
+
+                <article>
+                    <h2>Profile</h2>
+                    Recent Software Engineering in Front-end graduates with fundamental knowledge of HTML, CSS and
+                    JavaScript.
+                    Seeking to utilize educational background with excellent analytical, technical and programming
+                    skills to
+                    develop as an entry-level software engineer.
+                </article>
+
+                <h3>Personal Information</h3>
+
+                <ul class="clear-li">
+                    <li>Address: Minsk</li>
+                    <li>Nationality: Belarus</li>
+                    <li>Hobbies: Sport Activities, Reading Books, Watching Netflix</li>
+                </ul>
+
+                <h3>Languages</h3>
+                <ul class="clear-li">
+                    <li>English A2</li>
+                    <li>Polish A2</li>
+                </ul>
+
+                <h3>Work Experience</h3>
+                <p>October 2012 – December 2020</p>
+                <p>Deputy Director at Private trade company "FlorexGroup", Minsk</p>
 
 
-        #### EDUCATION
-        - July 2021 – Present
-        * RS School, JavaScript Course
-        - February 2021 – April 2021
-        * IT-Academy, Minsk Website Development with HTML, CSS & JAVASCRIPT
-        - September 1995 – July 2000
-        * The Academy of Public Administration, Minsk International Economy
-    </article>
+                <h4>Main responsibilities:</h4>
+                <ul class="square-li">
+                    <li>Management of the financial and economic activities of the company.</li>
+                    <li>Taking measures to provide the company with qualified personnel.</li>
+                    <li>Representing the interests of the company (concluding transactions).</li>
+                    <li>Carry out internal audit.</li>
+                    <li>Online store management (E-commerce, SMM).</li>
+                </ul>
+
+
+
+                <h3>Education</h3>
+                <ul class="clear-li">
+                    <li class="bold">RS School Minsk</li>
+                    <li class="semi">July 2021 – Present</li>
+                    <li>JavaScript Course</li>
+                </ul>
+                <ul class="clear-li">
+                    <li class="bold">IT-Academy, Minsk</li>
+                    <li class="semi">February 2021 – April 2021</li>
+                    <li>Website Development with HTML, CSS & JAVASCRIPT</li>
+                </ul>
+                <ul class="clear-li">
+                    <li class="bold">The Academy of Public Administration, Minsk</li>
+                    <li class="semi"> September 1995 – July 2000</li>
+                    <li>International Economy</li>
+                </ul>
+
+
+                <div class="clear"></div>
+                <div class="footer">
+                    <span>&copy; Copyright 2021</span>
+                    <div class="link">
+                        <a href="https://github.com/EvgenDrozdov">GitHub</a>
+                        <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" width="40"
+                                height="40" alt="logo"></a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
