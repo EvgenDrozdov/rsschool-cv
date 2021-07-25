@@ -50,4 +50,4 @@ Polish A2
   -  February 2021 – April 2021
      * IT-Academy, Minsk Website Development with HTML, CSS & JAVASCRIPT
   -  September 1995 – July 2000
-    * The Academy of Public Administration, Minsk International Economy
+     * The Academy of Public Administration, Minsk International Economy
