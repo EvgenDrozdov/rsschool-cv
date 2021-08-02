@@ -1,3 +1,3 @@
 # rsschool-cv
-https://evgendrozdov.github.io/rsschool-cv/museum/index.html
 
+https://github.com/EvgenDrozdov/rsschool-cv.git
