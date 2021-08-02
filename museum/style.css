@@ -578,6 +578,10 @@ h2 {
   letter-spacing: 2px;
   color: #ffffff;
 }
+.footer-menu a:hover {
+  color: var(--font-gold);
+}
+
 .socials ul {
   display: flex;
   align-items: center;
