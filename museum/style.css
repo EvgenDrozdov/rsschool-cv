@@ -596,3 +596,7 @@ h2 {
 .socials li:last-child {
   margin-right: 0;
 }
+.socials li:hover {
+  background-color: var(--font-gold);
+  border-color: var(--font-gold);
+}
